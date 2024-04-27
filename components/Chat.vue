@@ -6,7 +6,7 @@
         <div
           class="w-12 h-12 overflow-hidden rounded-full image-fit border-2 border-slate-200/70"
         >
-          <img src="/bruno.svg" />
+          <img src="/roxana.jpeg" />
         </div>
       </div>
       <div>
@@ -26,7 +26,7 @@
         <!-- Profile Image -->
         <img
           class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"
-          src="/bruno.svg"
+          src="/roxana.jpeg"
         />
         <!-- Text Image -->
         <!-- <div
@@ -52,7 +52,7 @@
         <!-- Profile Image -->
         <div
           class="flex uppercase items-center justify-center text-xl text-center text-white font-bold bg-gradient-to-t from-sky-500 to-emerald-500 w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"
-          src="/bruno.svg"
+          src="/roxana.jpeg"
         >
           js
         </div>
@@ -80,7 +80,7 @@
               </div> -->
         <img
           class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"
-          src="/bruno.svg"
+          src="/roxana.jpeg"
         />
         <!-- Main Content -->
         <!-- To flip bubble, change "rounded-r-xl" to "rounded-l-xl" -->

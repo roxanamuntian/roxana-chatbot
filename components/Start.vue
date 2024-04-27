@@ -1,7 +1,7 @@
 <template>
   <!-- Start Screen -->
   <section class="flex flex-col items-center gap-6">
-    <img src="/bruno.svg" class="w-64 h-64 rounded-full" />
+    <img src="/roxana.jpeg" class="w-64 h-64 rounded-full" />
     <h1 class="text-center font-bold text-2xl">Roxana's Customer Support</h1>
     <form class="flex flex-col gap-2 w-full">
       <input
