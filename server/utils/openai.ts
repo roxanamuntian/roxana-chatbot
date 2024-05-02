@@ -1,7 +1,9 @@
 import OpenAI from "openai";
 
+const config = useRuntimeConfig();
+
 export const client = new OpenAI({
-  apiKey: "my_key",
+  apiKey: config.apiSecret.apiSecret,
 });
 
-export const assistant = "my_assistant";
+export const assistant = config.apiSecret.apiAssistant;

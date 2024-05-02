@@ -46,7 +46,7 @@ function handleSubmit() {
   messages.value.push({
     name: "Roxana",
     message: newMessage.value,
-    isRoxana: false,
+    isRoxana: true,
     timestamp: new Date().toLocaleString([], {
       timeStyle: "short",
     }),
