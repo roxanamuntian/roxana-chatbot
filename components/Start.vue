@@ -22,6 +22,8 @@
           Start a New Chat
         </button>
         <button
+          v-if="thread && run"
+          @click="isChatting = true"
           type="button"
           class="transition w-full bg-slate-200 text-slate-600 font-medium py-2 px-3 rounded hover:bg-opacity-90"
         >
