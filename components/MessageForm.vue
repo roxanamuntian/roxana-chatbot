@@ -31,7 +31,7 @@ const newMessage = ref("");
 const messages = useMessages();
 const { customerInitials } = useCustomer();
 
-function handleSubmit() {
+async function handleSubmit() {
   messages.value.push({
     name: customerInitials.value,
     message: newMessage.value,
@@ -41,15 +41,30 @@ function handleSubmit() {
     }),
   });
 
+  const userMessage = newMessage.value;
   newMessage.value = "";
 
-  messages.value.push({
-    name: "Roxana",
-    message: newMessage.value,
-    isRoxana: true,
-    timestamp: new Date().toLocaleString([], {
-      timeStyle: "short",
-    }),
+  await $fetch("/api/message", {
+    method: "POST",
+    query: {
+      message: userMessage,
+    },
+    onResponse({ response }) {
+      const content = response._data.data[0].content[0];
+
+      if (content.type != "text") {
+        return;
+      }
+
+      messages.value.push({
+        name: "Roxana",
+        message: content.text.value,
+        isRoxana: true,
+        timestamp: new Date().toLocaleString([], {
+          timeStyle: "short",
+        }),
+      });
+    },
   });
 }
 </script>

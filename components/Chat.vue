@@ -38,7 +38,7 @@
       </svg>
     </div>
     <div
-    v-else
+      v-else
       class="flex flex-col gap-3.5 py-5 px-3 overflow-y-scroll max-h-[400px]"
     >
       <!-- To flip message use "flex-row-reverse" -->
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <MessageForm></MessageForm>
+    <MessageForm v-if="!pending" />
   </section>
 </template>
 
